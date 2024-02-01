@@ -1,7 +1,7 @@
 <?php
     class ControllerBDD{
     static function insertbdd(){
-    require_once("congif.php"); # Configuration de la base de données
+    require_once("config.php"); # Configuration de la base de données
 
         try {
             // Connexion à la base de données avec PDO

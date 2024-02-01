@@ -28,12 +28,13 @@
     ?>
     <fieldset>
         <legend>Commencer par initialiser votre login et mot de passe</legend>
-        <form method="post" action="<?php print $_SERVER["PHP_SELF"]; ?>" id="form">
+        <form method="post" action="<?= $_SERVER["PHP_SELF"]; ?>" id="form">
             <label for="login">Login :</label>
             <input type="text" id="login" name="login" placeholder="Login" aria-required="true" autofocus>
         
             <label for="mot_de_passe">Mot de passe :</label>
-            <input type="password" id="mot_de_passe" placeholder="Password" name="mot_de_passe" aria-required="true">
+            <input type="password" id="mot_de_passe" placeholder="Password" 
+            name="mot_de_passe" aria-required="true">
         
             <button type="submit">S'inscrire</button>
         </form>
